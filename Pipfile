@@ -12,6 +12,7 @@ pandas = "*"
 scipy = "*"
 scikit-learn = "*"
 matplotlib = "*"
+requests = "*"
 
 [dev-packages]
 pytest = "*"

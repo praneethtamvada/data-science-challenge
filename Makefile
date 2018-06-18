@@ -17,7 +17,7 @@ EXECUTABLES = pipenv aws
 ## Set up python interpreter environment
 environment: .venv
 	$(foreach x,$(EXECUTABLES),\
-			$(if $(shell which $(x)),,\
+			$(if $(shell where $(x)),,\
 			$(error "No '$(x)' found, build will fail. Please read README.md.")))
 
 ## Run jupyter notebook server
